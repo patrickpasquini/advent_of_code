@@ -1,6 +1,8 @@
-from inputs.day_2 import _input
-from solutions.day_2 import pt2
+from inputs.day_3 import _input
+from solutions.day_3 import pt1, pt2
 
-result = pt2(_input)
+result_1 = pt1(_input)
+result_2 = pt2(_input)
 
-print(result)
+print("Resultado 1", result_1)
+print("Resultado 2", result_2)
