@@ -1,6 +1,6 @@
 from aocd import get_data
 
-_input = get_data(day=3, year=2024)
+_input = get_data(day=2, year=2024)
 
 
 def base_validate(rel: list):

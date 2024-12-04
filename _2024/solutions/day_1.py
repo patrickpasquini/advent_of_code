@@ -1,6 +1,6 @@
 from aocd import get_data
 
-_input = get_data(day=3, year=2024)
+_input = get_data(day=1, year=2024)
 
 
 def pt1():
