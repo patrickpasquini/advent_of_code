@@ -1,7 +1,10 @@
 import re
+from aocd import get_data
+
+_input = get_data(day=3, year=2024)
 
 
-def pt1(_input):
+def pt1():
     pattern = r"mul\(\d{1,3},\d{1,3}\)"
     matches = re.findall(pattern, _input)
     result = 0
@@ -11,7 +14,7 @@ def pt1(_input):
     return result
 
 
-def pt2(_input: str) -> int:
+def pt2():
     pattern = r"mul\((\d{1,3}),(\d{1,3})\)"
     is_enabled = True
     result = 0

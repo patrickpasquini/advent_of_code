@@ -1,3 +1,8 @@
+from aocd import get_data
+
+_input = get_data(day=3, year=2024)
+
+
 def base_validate(rel: list):
     is_sorted = rel == sorted(rel) or rel == sorted(rel, reverse=True)
     is_correct = True
@@ -10,7 +15,7 @@ def base_validate(rel: list):
     return is_correct
 
 
-def pt1(_input: str):
+def pt1():
     result = 0
     for line in _input.splitlines():
         rel = list(map(int, line.split()))
@@ -19,7 +24,7 @@ def pt1(_input: str):
     return result
 
 
-def pt2(_input: str):
+def pt2():
     result = 0
     for line in _input.splitlines():
         rel = list(map(int, line.split()))

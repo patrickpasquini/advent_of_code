@@ -1,4 +1,9 @@
-def pt1(_input: str):
+from aocd import get_data
+
+_input = get_data(day=4, year=2024)
+
+
+def pt1():
     matrix = [list(row) for row in _input.splitlines()]
     len_rows, len_cols = len(matrix), len(matrix[0])
     target = "XMAS"
@@ -36,7 +41,7 @@ def pt1(_input: str):
     return result
 
 
-def pt2(_input: str):
+def pt2():
     matrix = [list(row) for row in _input.splitlines()]
     len_rows, len_cols = len(matrix), len(matrix[0])
     patterns = [

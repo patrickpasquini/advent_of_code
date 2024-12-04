@@ -1,4 +1,9 @@
-def pt1(_input: str):
+from aocd import get_data
+
+_input = get_data(day=3, year=2024)
+
+
+def pt1():
     left_numbers, right_numbers = [], []
     for line in _input.splitlines():
         left, right = line.split()
@@ -12,7 +17,7 @@ def pt1(_input: str):
     return result
 
 
-def pt2(_input: str):
+def pt2():
     from collections import Counter
 
     left_numbers, right_numbers = [], []
